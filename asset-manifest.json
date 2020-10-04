@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/portfolio_client/static/css/main.73f7280c.chunk.css",
+    "main.js": "/portfolio_client/static/js/main.4def38ee.chunk.js",
+    "main.js.map": "/portfolio_client/static/js/main.4def38ee.chunk.js.map",
+    "runtime-main.js": "/portfolio_client/static/js/runtime-main.9f202cb2.js",
+    "runtime-main.js.map": "/portfolio_client/static/js/runtime-main.9f202cb2.js.map",
+    "static/js/2.d2870ee7.chunk.js": "/portfolio_client/static/js/2.d2870ee7.chunk.js",
+    "static/js/2.d2870ee7.chunk.js.map": "/portfolio_client/static/js/2.d2870ee7.chunk.js.map",
+    "index.html": "/portfolio_client/index.html",
+    "precache-manifest.017c09c276eaa96ed3183695db41b03a.js": "/portfolio_client/precache-manifest.017c09c276eaa96ed3183695db41b03a.js",
+    "service-worker.js": "/portfolio_client/service-worker.js",
+    "static/css/main.73f7280c.chunk.css.map": "/portfolio_client/static/css/main.73f7280c.chunk.css.map",
+    "static/js/2.d2870ee7.chunk.js.LICENSE.txt": "/portfolio_client/static/js/2.d2870ee7.chunk.js.LICENSE.txt",
+    "static/media/dhruvdp.svg": "/portfolio_client/static/media/dhruvdp.54c24a88.svg",
+    "static/media/photo1.png": "/portfolio_client/static/media/photo1.b0f8ca6e.png",
+    "static/media/photo10.png": "/portfolio_client/static/media/photo10.79e20a1b.png",
+    "static/media/photo11.png": "/portfolio_client/static/media/photo11.96ba2456.png",
+    "static/media/photo12.png": "/portfolio_client/static/media/photo12.1ed48084.png",
+    "static/media/photo13.png": "/portfolio_client/static/media/photo13.7c64aab1.png",
+    "static/media/photo14.png": "/portfolio_client/static/media/photo14.7867fa87.png",
+    "static/media/photo2.png": "/portfolio_client/static/media/photo2.fde681c1.png",
+    "static/media/photo3.png": "/portfolio_client/static/media/photo3.45e0f80a.png",
+    "static/media/photo4.png": "/portfolio_client/static/media/photo4.15b654df.png",
+    "static/media/photo5.png": "/portfolio_client/static/media/photo5.2b4480d2.png",
+    "static/media/photo6.png": "/portfolio_client/static/media/photo6.ad2697ff.png",
+    "static/media/photo7.png": "/portfolio_client/static/media/photo7.607fb841.png",
+    "static/media/photo8.png": "/portfolio_client/static/media/photo8.dbdceee9.png",
+    "static/media/photo9.png": "/portfolio_client/static/media/photo9.ce1224af.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9f202cb2.js",
+    "static/js/2.d2870ee7.chunk.js",
+    "static/css/main.73f7280c.chunk.css",
+    "static/js/main.4def38ee.chunk.js"
+  ]
+}

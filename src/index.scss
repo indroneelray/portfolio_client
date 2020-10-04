@@ -1,0 +1,142 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+$nav-height: 80px;
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+nav {
+  height: $nav-height;
+
+  a {
+    color: black;
+    cursor: pointer;
+  }
+
+  a.active {
+    color: rgba(84, 45, 233, 1);
+  }
+}
+
+.w-90 {
+  width: 90% !important;
+}
+
+.w-80 {
+  width: 80% !important;
+}
+
+.w-70 {
+  width: 70% !important;
+}
+
+.gelasio {
+  font-family: "Gelasio", serif;
+}
+.rubik {
+  font-family: "Rubik", sans-serif;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.menu-options {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+/* HOMEPAGE */
+
+.homepage {
+  background: #53bacb;
+  min-height: calc(100vh - #{$nav-height});
+
+  hr {
+    color: white;
+    height: 2px;
+    background-color: white;
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 160px;
+    text-shadow: -1px 7px 5px rgba(0, 0, 0, 0.25);
+  }
+  h2 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .intro-row {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.awards {
+  h1 {
+    color: rgba(165, 215, 223, 1);
+    font-size: 22px;
+    font-family: "Gelasio", serif;
+  }
+
+  .awards-purple-box {
+    background: #3f2b89;
+    padding: 5% 10%;
+
+    ul {
+      li {
+        color: white;
+        font-family: "Rubik", sans-serif;
+        font-size: 16px;
+        line-height: 2.2rem;
+        padding-left: 10%;
+
+        strong {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.photography {
+  .image-container {
+    border: 2px solid #3f2b89;
+    margin: 30px 0px;
+    padding:15px 0px;
+
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}

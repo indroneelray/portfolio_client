@@ -53,6 +53,10 @@ nav {
   width: 70% !important;
 }
 
+.w-60 {
+  width: 60% !important;
+}
+
 .gelasio {
   font-family: "Gelasio", serif;
 }
@@ -196,13 +200,73 @@ nav {
         align-items: center;
         justify-content: center;
         padding: 10px 8px;
-        border:none !important;
+        border: none !important;
 
         span {
           color: white;
           font-family: "Gelasio", serif;
           font-weight: bold;
         }
+      }
+    }
+  }
+}
+
+.internships {
+  .universe-row {
+    margin: 20px 0px;
+    .universe-image {
+      width: 50%;
+      background: #d2ebef;
+    }
+
+    h4 {
+      font-size: 18px;
+      margin-bottom: 2px;
+    }
+
+    p:first-child {
+      font-weight: bolder;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+  }
+  .internship-images-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    border-left: 5px solid #542de9;
+    border-bottom: 5px solid #542de9;
+    padding: 2px;
+
+    img {
+      margin: 2px;
+    }
+  }
+
+  .boxes-row {
+    margin-top: 25px;
+
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .col-12:first-child .box {
+      background-color: rgba(165, 215, 223, 1);
+      img {
+        width: 100px;
+      }
+    }
+
+    .col-12:nth-child(2) .box {
+      background-color: rgba(241, 241, 241, 1);
+      img {
+        width: 100px;
       }
     }
   }

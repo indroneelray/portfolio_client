@@ -40,6 +40,21 @@ import Photo12 from "./assets/photography/photo12.png";
 import Photo13 from "./assets/photography/photo13.png";
 import Photo14 from "./assets/photography/photo14.png";
 
+import intern1 from "./assets/internships/1.png";
+import intern7 from "./assets/internships/2.png";
+import intern8 from "./assets/internships/3.png";
+import intern4 from "./assets/internships/4.png";
+import intern5 from "./assets/internships/5.png";
+import intern6 from "./assets/internships/6.png";
+import intern2 from "./assets/internships/7.png";
+import intern3 from "./assets/internships/8.png";
+import intern9 from "./assets/internships/9.png";
+import intern10 from "./assets/internships/10.png";
+import intern11 from "./assets/internships/11.png";
+import cad from "./assets/internships/cad.png";
+import foundation from "./assets/internships/foundation.png";
+import universe from "./assets/internships/universe.png";
+
 export const routes = [
   { id: 1, name: "Home", path: "/", component: Homepage },
   { id: 2, name: "Innovations", path: "/innovations", component: Innovations },
@@ -60,9 +75,9 @@ export const routes = [
 ];
 
 export const innovationItems = [
-  {id:1, title: "Miss Mistake", image:in1 },
-  {id:2, title: "The ZoroLoo", image: in2 },
-  {id:3, title: "THEOS", image: in3 },
+  { id: 1, title: "Miss Mistake", image: in1 },
+  { id: 2, title: "The ZoroLoo", image: in3 },
+  { id: 3, title: "THEOS", image: in2 },
 ];
 
 export const mmImages = [mm1, mm2, mm3, mm4, mm5];
@@ -109,3 +124,22 @@ export const photographs = [
   Photo13,
   Photo14,
 ];
+
+export const internshipAssets = {
+  bulkImages: [
+    intern1,
+    intern2,
+    intern3,
+    intern4,
+    intern9,
+    intern5,
+    intern7,
+    intern6,
+    intern8,
+    intern10,
+    intern11,
+  ],
+  cad: cad,
+  foundation: foundation,
+  universe: universe,
+};

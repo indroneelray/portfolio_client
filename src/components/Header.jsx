@@ -6,13 +6,15 @@ const Header = ({routes, location}) => {
     
     // console.log(props)
   return (
-    <nav className="container-fluid d-flex align-items-center justify-content-between gelasio fixed-top w-90">
+    <nav className="container-fluid gelasio fixed-top w-100">
+      <div className="d-flex w-80 mx-auto align-items-center justify-content-between">
       <Link to="/" className="logo w-25">Dhruv Mehta </Link>
       <ul className="menu-options d-flex justify-content-between w-50 list-unstyled">
         {routes.map(({name, path})=>(
             <li key={path}><Link className={path == location.pathname  ? "active" : ""} to={path} >{name}</Link></li>
         ))}
       </ul>
+      </div>
     </nav>
   );
 }

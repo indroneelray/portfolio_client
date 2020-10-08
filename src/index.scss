@@ -32,6 +32,10 @@ body {
 nav {
   height: $nav-height;
   background: white;
+  padding: 0 10%;
+   div{
+     height:100%;
+   }
 
   a {
     color: black;
@@ -303,11 +307,11 @@ nav {
   h3 {
     font-size: 18px;
   }
-  p{
-    font-size:14px;
+  p {
+    font-size: 14px;
   }
-  li{
-    font-size:14px;
+  li {
+    font-size: 14px;
   }
   .overview-section {
     background: #c8f7ff;
@@ -332,17 +336,17 @@ nav {
     h3 {
       color: rgba(84, 45, 233, 1);
     }
-  }
-
-  .probability {
-    padding: 30px 20px;
-    h3 {
-      color: rgba(0, 103, 120, 1);
+    video {
+      width: 100%;
     }
   }
 
   .probability {
-    padding:20px;
+    padding: 30px 20px;
+    padding: 20px;
     background: rgba(165, 215, 223, 0.5);
+    h3 {
+      color: rgba(0, 103, 120, 1);
+    }
   }
 }

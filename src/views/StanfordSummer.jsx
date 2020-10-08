@@ -1,5 +1,6 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import Video from '../assets/video.mp4'
 
 export default function StanfordSummer() {
   return (
@@ -88,7 +89,7 @@ export default function StanfordSummer() {
               </div>
               <div className="col-12 col-md-6">
                 <video controls>
-                    <source src="https://drive.google.com/file/d/1WXDUvJH18FsbzSxVROdPqpMxiR-lCbu2/view"/>
+                    <source src={Video} />
                     </video>
               </div>
             </div>

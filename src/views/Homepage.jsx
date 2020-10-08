@@ -13,7 +13,7 @@ export default function Homepage() {
           <div className="col-8 mt-n5">
             <h1 className="rubik"> Hello!</h1>
             <hr className="hr" />
-            <h2 className="gelasio">Welcome to my protfolio</h2>
+            <h2 className="gelasio">Welcome to my portfolio</h2>
           </div>
         </div>
       </Fade>

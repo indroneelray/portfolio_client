@@ -61,13 +61,12 @@ const Innovations = () => {
         </div>
 
         <div className="w-100 tabs-bg">
-          <div className=" tabs-container d-flex">
+          <div className="tabs-container d-flex">
             {innovationItems.map((item) => {
               return (
                 <button
-                  className="innovation-tab"
+                  className={`innovation-tab ${activeTab === item.id && 'active'}`}
                   onClick={() => handleClick(item.id)}
-                  disabled={item.id === activeTab }
                 >
                   <img src={item.image} />
                   &nbsp;

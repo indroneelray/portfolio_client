@@ -1,6 +1,8 @@
 import React from "react";
 import { internshipAssets } from "../constants";
 import Fade from "react-reveal/Fade";
+import internships from "../assets/internships/internships.png";
+
 export default function Internships() {
   return (
     <div className="internships container-fluid w-80 px-5">
@@ -25,34 +27,37 @@ export default function Internships() {
           </div>
 
           <div className="internship-images-container">
-            {internshipAssets.bulkImages.map((item) => (
+            {/* {internshipAssets.bulkImages.map((item) => (
               <img src={item} />
-            ))}
+            ))} */}
+            <img src={internships} alt="" className="img-fluid" />
           </div>
 
           <div className="row boxes-row">
             <div className="col-12 col-md-6">
               <div className="box">
                 <img src={internshipAssets.foundation} alt="" />
-                <h4>The CKS Foundation</h4>
                 <div>
-                <p>Volunteer</p>
-                <p>
-                  Taught Math and English to underprivileged children from grade
-                  6 to 9.
-                </p>
+                  <h4>The CKS Foundation</h4>
+                  <p>Volunteer</p>
+                  <p>
+                    Taught Math and English to underprivileged children from
+                    grade 6 to 9.
+                  </p>
                 </div>
               </div>
             </div>
             <div className="col-12 col-md-6">
               <div className="box">
                 <img src={internshipAssets.cad} alt="" />
-                <div><h4>CaddMan</h4>
-                <p>3D Designer</p>
-                <p>
-                  Assisted in designing 3D models and printing ABS plastic or
-                  Nylon prototypes for Caddman’s clients
-                </p></div>
+                <div>
+                  <h4>CaddMan</h4>
+                  <p>3D Designer</p>
+                  <p>
+                    Assisted in designing 3D models and printing ABS plastic or
+                    Nylon prototypes for Caddman’s clients
+                  </p>
+                </div>
               </div>
             </div>
           </div>

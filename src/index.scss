@@ -22,6 +22,7 @@ html {
 body {
   overflow-x: hidden;
   height: 100%;
+  padding-top: $nav-height;
 }
 
 #root {
@@ -30,6 +31,7 @@ body {
 
 nav {
   height: $nav-height;
+  background: white;
 
   a {
     color: black;
@@ -193,17 +195,26 @@ nav {
       width: 80%;
       margin: 0 auto;
 
+      .innovation-tab.active {
+        background-color: rgba(83, 186, 203, 1);
+        color: white;
+
+        span {
+          color: white;
+        }
+      }
+
       .innovation-tab {
-        background: #53bacb;
+        background-color: transparent;
         width: 250px;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 10px 8px;
-        border: none !important;
+        border: 3px solid rgba(83, 186, 203, 1) !important;
 
         span {
-          color: white;
+          color: rgba(83, 186, 203, 1);
           font-family: "Gelasio", serif;
           font-weight: bold;
         }
@@ -214,7 +225,8 @@ nav {
 
 .internships {
   .universe-row {
-    margin: 20px 0px;
+    margin: 35px 0px;
+    font-family: Rubik;
     .universe-image {
       width: 50%;
       background: #d2ebef;
@@ -238,8 +250,6 @@ nav {
     align-items: flex-end;
     justify-content: flex-start;
     flex-wrap: wrap;
-    border-left: 5px solid #542de9;
-    border-bottom: 5px solid #542de9;
     padding: 2px;
 
     img {
@@ -248,26 +258,91 @@ nav {
   }
 
   .boxes-row {
-    margin-top: 25px;
+    margin-top: 35px;
+    margin-bottom: 35px;
 
     .box {
       display: flex;
       align-items: center;
       justify-content: space-around;
+      height: 100%;
+      padding: 5px;
+
+      p {
+        margin-bottom: 0px;
+      }
+
+      h4 + p {
+        font-weight: 500;
+      }
+      h4 {
+        margin-bottom: 0px;
+      }
+
+      div {
+        padding: 25px 30px;
+      }
     }
 
     .col-12:first-child .box {
       background-color: rgba(165, 215, 223, 1);
-      img {
-        width: 100px;
-      }
     }
 
     .col-12:nth-child(2) .box {
       background-color: rgba(241, 241, 241, 1);
-      img {
-        width: 100px;
-      }
     }
+
+    img {
+      width: 125;
+    }
+  }
+}
+
+.stanford-summer {
+  font-family: Gelasio;
+  h3 {
+    font-size: 18px;
+  }
+  p{
+    font-size:14px;
+  }
+  li{
+    font-size:14px;
+  }
+  .overview-section {
+    background: #c8f7ff;
+    padding: 30px 20px;
+
+    h3 {
+      color: #3d2696;
+    }
+  }
+
+  .formal-methods {
+    background: white;
+    padding: 30px 20px;
+    h3 {
+      color: #3291a0;
+    }
+  }
+
+  .smart-cities {
+    background: #f1f1f1;
+    padding: 30px 20px;
+    h3 {
+      color: rgba(84, 45, 233, 1);
+    }
+  }
+
+  .probability {
+    padding: 30px 20px;
+    h3 {
+      color: rgba(0, 103, 120, 1);
+    }
+  }
+
+  .probability {
+    padding:20px;
+    background: rgba(165, 215, 223, 0.5);
   }
 }

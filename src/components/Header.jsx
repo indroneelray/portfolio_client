@@ -6,7 +6,7 @@ const Header = ({routes, location}) => {
     
     // console.log(props)
   return (
-    <nav className="container-fluid d-flex align-items-center justify-content-between gelasio w-90">
+    <nav className="container-fluid d-flex align-items-center justify-content-between gelasio fixed-top w-90">
       <Link to="/" className="logo w-25">Dhruv Mehta </Link>
       <ul className="menu-options d-flex justify-content-between w-50 list-unstyled">
         {routes.map(({name, path})=>(

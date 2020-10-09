@@ -59,8 +59,8 @@ nav {
   }
 }
 
-.sidebar{
-  display:none
+.sidebar {
+  display: none;
 }
 
 .w-90 {
@@ -333,6 +333,29 @@ nav {
 
         span {
           color: white;
+          text-shadow: -1px 7px 5px rgba(0, 0, 0, 0.25);
+        }
+        img.missmistake {
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 50%;
+        }
+
+        img.thezoroloo {
+          background: linear-gradient(
+            180deg,
+            rgba(249, 249, 249, 0) 0%,
+            rgba(232, 232, 232, 0) 90%,
+            rgba(66, 66, 66, 0.2) 100%
+          );
+        }
+
+        img.theos {
+          background: linear-gradient(
+            180deg,
+            rgba(249, 249, 249, 0) 0%,
+            rgba(232, 232, 232, 0) 90%,
+            rgba(66, 66, 66, 0.2) 100%
+          );
         }
       }
 
@@ -343,8 +366,10 @@ nav {
         align-items: center;
         justify-content: center;
         padding: 10px 8px;
-        border: 3px solid rgba(83, 186, 203, 1) !important;
+        border: 3px solid #53bacb !important;
         min-height: 110px;
+        outline: none;
+        border-radius: 0px !important;
 
         span {
           color: rgba(83, 186, 203, 1);
@@ -480,6 +505,12 @@ nav {
   }
 }
 
+@media(max-width:1024px){
+  .innovations .tabs-bg{
+    bottom:-10%
+  }
+}
+
 @media (max-width: 768px) {
   .awards.w-80 {
     width: 100% !important;
@@ -517,10 +548,12 @@ nav {
     z-index: 1;
     position: relative;
     padding-top: 10%;
+    width: 100% !important;
   }
 
   .innovations .tabs-bg .tabs-container {
-    bottom: 10%;
+    top: 30%;
+    bottom: unset;
   }
 
   .homepage .intro-row {
@@ -547,21 +580,25 @@ nav {
   }
 
   .sidebar {
-    left: -384px;
-    transition: left 0.4s ease-out;
-    width: 75%;
+    right: -500px;
+    transition: right 0.4s ease-out;
+    width: 100%;
     position: fixed;
     min-height: 100vh;
     z-index: 1000;
-    background: white;
-    border:1px solid white;
+    border: 1px solid white;
     top: 0;
-    display:block;
+    display: block;
+  }
+
+  .sidebar a.active {
+    color: rgba(84, 45, 233, 1);
   }
 
   .sidebar.active {
-    left: 0px;
-    transition: left 0.4s ease-in;
+    right: 0px;
+    transition: right 0.4s ease-in;
+    background: rgba(84, 45, 233, 0.4);
   }
 
   .sidebar ul {
@@ -572,28 +609,43 @@ nav {
     padding-top: 80px;
     /* padding-bottom: 20%; */
     padding-left: 20px;
-    padding-right:10px;
+    padding-right: 10px;
     font-size: 20px;
     font-family: Gelasio;
     /* color: black !important; */
-    height: 80vh;
+    height: 100vh;
+    background: white;
+    width: 75%;
+    margin-left:auto;
+    margin-right:0
   }
 
   .sidebar ul a {
     color: black;
   }
 
-  .innovations .tabs-bg{
-    bottom:-30%
+  .innovations .tabs-bg {
+    bottom: -30%;
   }
+
+
   .innovations .tabs-bg .tabs-container {
     flex-direction: column;
     align-items: center;
 
-    .innovation-tab{
-      margin:10px 0px
+    .innovation-tab {
+      margin: 10px 0px;
     }
   }
+
+  
+  .innovations .w-80 .tab-details-container h2{
+    font-size:18px
+  }
+  .innovations .w-80 .tab-details-container p{
+    font-size:14px
+  }
+  
   .homepage h1 {
     font-size: 80px;
   }
@@ -602,10 +654,10 @@ nav {
     width: 100%;
   }
 
-  .internships .universe-row{
-    .col-12{
-      text-align:center !important;
-      margin-top:15px
+  .internships .universe-row {
+    .col-12 {
+      text-align: center !important;
+      margin-top: 15px;
     }
   }
 
@@ -621,9 +673,9 @@ nav {
   //   width: 100% !important;
   // }
 
-  .photography .photo-brand{
-    top:unset;
-    bottom:5vh;
+  .photography .photo-brand {
+    top: unset;
+    bottom: 5vh;
     overflow-wrap: break-word;
   }
 }

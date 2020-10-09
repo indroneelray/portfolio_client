@@ -26,7 +26,7 @@ const Header = ({ routes, location }) => {
           </ul>
 
           <button className="menu-button" onClick={() => setIsOpen(!isOpen)}>
-            <i class="fa fa-bars"></i>
+            <i className="fa fa-bars"></i>
           </button>
         </div>
       </nav>

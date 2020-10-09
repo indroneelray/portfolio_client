@@ -35,7 +35,7 @@ export default function Internships() {
 
           <div className="row boxes-row">
             <div className="col-12 col-md-6">
-              <div className="box">
+              <div className="box desktop">
                 <img src={internshipAssets.foundation} alt="" />
                 <div>
                   <h4>The CKS Foundation</h4>

@@ -1,7 +1,8 @@
 import { Route, Switch, BrowserRouter } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import React from "react";
 import Header from "./components/Header";
-import {routes} from './constants'
+import { routes } from "./constants";
 
 export default function Routes() {
   return (
@@ -15,7 +16,9 @@ export default function Routes() {
             render={(props) => (
               <>
                 <Header routes={routes} {...props} />
-                <route.component/>
+                <ScrollToTop>
+                  <route.component />
+                </ScrollToTop>
               </>
             )}
           />

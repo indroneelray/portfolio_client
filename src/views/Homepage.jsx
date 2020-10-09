@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade";
 export default function Homepage() {
   return (
     <div className="homepage container-fluid w-80 px-5 position-relative">
-      {/* <Fade bottom> */}
+      <Fade bottom>
         <div className="row intro-row w-100 mx-auto container align-items-center">
           <div className="col-12 col-lg-4">
             <img src={DhruvDP} />
@@ -16,21 +16,21 @@ export default function Homepage() {
             <h2 className="gelasio">Welcome to my portfolio</h2>
           </div>
         </div>
-      {/* </Fade> */}
+      </Fade>
 
       <div className="floating-icons">
         <span className="position-relative email">
-          <i class="fa fa-envelope"></i> {" "}
+          <i className="fa fa-envelope"></i> {" "}
           {/* <strong> Dhruvmc23@gmail.com </strong> */}
         </span>
         <br />
         <span className="position-relative instagram">
-          <i class="fa fa-instagram"></i> 
+          <i className="fa fa-instagram"></i> 
           {/* <strong> Dhruvm_23</strong> */}
         </span>
         <br />
         <span className="position-relative phone">
-          <i class="fa fa-phone"></i> {" "}
+          <i className="fa fa-phone"></i> {" "}
           {/* <strong>+91 9711450509</strong>{" "} */}
         </span>
       </div>

@@ -32,10 +32,12 @@ body {
 nav {
   height: $nav-height;
   background: white;
-  padding: 0 10%;
-   div{
-     height:100%;
-   }
+  .menu-button {
+    display: none;
+  }
+  div {
+    height: 100%;
+  }
 
   a {
     color: black;
@@ -45,6 +47,20 @@ nav {
   a.active {
     color: rgba(84, 45, 233, 1);
   }
+
+  ul {
+    width: 50%;
+  }
+
+  @media (max-width: 1024px) {
+    ul {
+      width: 80%;
+    }
+  }
+}
+
+.sidebar{
+  display:none
 }
 
 .w-90 {
@@ -84,6 +100,12 @@ nav {
 .homepage {
   background: #53bacb;
   min-height: calc(100vh - #{$nav-height});
+  display: flex;
+  justify-content: center;
+
+  @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    min-height: calc(70vh - #{$nav-height});
+  }
 
   hr {
     color: white;
@@ -108,6 +130,103 @@ nav {
   .intro-row {
     position: absolute;
     bottom: 0;
+  }
+
+  .floating-icons {
+    position: absolute;
+    left: 0;
+    background: #542de9;
+    top: 35%;
+    border-radius: 5px;
+    height: 185px;
+    padding: 5px 8px;
+    display: flex;
+    flex-direction: column;
+    margin-left: -20px;
+    font-family: "Gelasio", serif;
+    justify-content: center;
+
+    span {
+      text-align: center;
+      width: 30px;
+      overflow: hidden;
+      cursor: pointer;
+      border: 2px solid white;
+      height: 30px;
+      border-radius: 50%;
+
+      i {
+        color: white;
+        font-size: 15px;
+        vertical-align: middle;
+      }
+
+      strong {
+        display: none;
+      }
+    }
+
+    span.email:hover::after {
+      color: white;
+      content: "Dhruvmc23@gmail.com";
+      position: fixed;
+      margin-top: -2px;
+      margin-left: 10px;
+      background: #542de9;
+      padding: 2px 8px 2px 15px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      z-index: 0;
+      text-align: center;
+      font-weight: bold;
+      overflow: hidden;
+      animation: fadeIn 0.5s 1;
+      width: 230px;
+    }
+
+    span.instagram:hover::after {
+      color: white;
+      content: "@Dhruvm_23";
+      position: fixed;
+      width: 150px;
+      margin-top: 0px;
+      margin-left: 10px;
+      background: #542de9;
+      padding: 2px 8px 2px 15px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      z-index: 0;
+      text-align: center;
+      font-weight: bold;
+      animation: fadeIn 0.5s 1;
+    }
+
+    span.phone:hover::after {
+      color: white;
+      content: "+91 9711450509";
+      position: fixed;
+      width: 180px;
+      margin-top: -2px;
+      margin-left: 10px;
+      font-weight: bold;
+      background: #542de9;
+      padding: 2px 8px 2px 15px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      z-index: 0;
+      text-align: center;
+      animation: fadeIn 0.5s 1;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      // 50% {width: 115px !important} /* ignored */
+      to {
+        opacity: 1;
+      }
+    }
   }
 }
 
@@ -149,6 +268,15 @@ nav {
       display: block;
       max-width: 100%;
     }
+  }
+
+  .photo-brand {
+    position: fixed;
+    top: 40vh;
+    background: #c8f7ff;
+    left: 0;
+    width: 150px;
+    padding-left: 20px;
   }
 }
 
@@ -216,6 +344,7 @@ nav {
         justify-content: center;
         padding: 10px 8px;
         border: 3px solid rgba(83, 186, 203, 1) !important;
+        min-height: 110px;
 
         span {
           color: rgba(83, 186, 203, 1);
@@ -297,7 +426,7 @@ nav {
     }
 
     img {
-      width: 125;
+      width: 125px;
     }
   }
 }
@@ -348,5 +477,152 @@ nav {
     h3 {
       color: rgba(0, 103, 120, 1);
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .awards.w-80 {
+    width: 100% !important;
+  }
+
+  .photography.w-80 {
+    width: 100% !important;
+  }
+
+  .internships.w-80 {
+    width: 100% !important;
+  }
+
+  .innovations .tabs-bg .tabs-container {
+    width: 100%;
+  }
+
+  .internships .universe-row .universe-image {
+    width: 90%;
+  }
+
+  .internships .col-12.col-md-6 .w-60 {
+    width: 100% !important;
+  }
+
+  .internships .boxes-row img {
+    width: 85px;
+  }
+
+  .innovations .image-container img {
+    width: 80%;
+  }
+
+  .innovations .w-80 {
+    z-index: 1;
+    position: relative;
+    padding-top: 10%;
+  }
+
+  .innovations .tabs-bg .tabs-container {
+    bottom: 10%;
+  }
+
+  .homepage .intro-row {
+    flex-direction: column;
+    bottom: unset;
+    top: 5%;
+
+    .col-12 {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  nav .menu-options {
+    display: none !important;
+  }
+
+  nav .menu-button {
+    display: block;
+    background: white;
+    border: none;
+    font-size: 24px;
+  }
+
+  .sidebar {
+    left: -384px;
+    transition: left 0.4s ease-out;
+    width: 50%;
+    position: fixed;
+    min-height: 100vh;
+    z-index: 1000;
+    background: white;
+    border:1px solid white;
+    top: 0;
+  }
+
+  .sidebar.active {
+    left: 0px;
+    transition: left 0.4s ease-in;
+  }
+
+  .sidebar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+    padding-top: 80px;
+    /* padding-bottom: 20%; */
+    padding-left: 20px;
+    padding-right:10px;
+    font-size: 20px;
+    font-family: Gelasio;
+    /* color: black !important; */
+    height: 80vh;
+  }
+
+  .sidebar ul a {
+    color: black;
+  }
+
+  .innovations .tabs-bg{
+    bottom:-30%
+  }
+  .innovations .tabs-bg .tabs-container {
+    flex-direction: column;
+    align-items: center;
+
+    .innovation-tab{
+      margin:10px 0px
+    }
+  }
+  .homepage h1 {
+    font-size: 80px;
+  }
+
+  .homepage .intro-row img {
+    width: 100%;
+  }
+
+  .internships .universe-row{
+    .col-12{
+      text-align:center !important;
+      margin-top:15px
+    }
+  }
+
+  .awards .react-reveal.w-80 {
+    width: 100% !important;
+  }
+
+  .photography .react-reveal.w-80 {
+    width: 100% !important;
+  }
+
+  // .internships.w-80 {
+  //   width: 100% !important;
+  // }
+
+  .photography .photo-brand{
+    top:unset;
+    bottom:5vh;
+    overflow-wrap: break-word;
   }
 }

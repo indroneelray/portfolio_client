@@ -12,6 +12,13 @@ export default function Photography() {
             {photographs.map(image=>(<div className="image-container"><img src={image} /></div>))}
         </div>
       </Fade>
+
+
+
+
+      <div className="photo-brand">
+        <p>Visit <br /> @worldwide_cosmonaut on Instagram for more!</p>
+      </div>
     </div>
   );
 }

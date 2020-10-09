@@ -1,23 +1,52 @@
-import React from "react";
-import {Link, withRouter} from 'react-router-dom'
+import React, { useEffect, useState } from "react";
+import { Link, withRouter } from "react-router-dom";
 import { routes } from "../constants";
 
-const Header = ({routes, location}) => {
-    
-    // console.log(props)
+const Header = ({ routes, location }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <nav className="container-fluid gelasio fixed-top w-100">
-      <div className="d-flex w-80 mx-auto align-items-center justify-content-between">
-      <Link to="/" className="logo w-25">Dhruv Mehta </Link>
-      <ul className="menu-options d-flex justify-content-between w-50 list-unstyled">
-        {routes.map(({name, path})=>(
-            <li key={path}><Link className={path == location.pathname  ? "active" : ""} to={path} >{name}</Link></li>
-        ))}
-      </ul>
+    <>
+      <nav className="gelasio fixed-top w-100">
+        <div className="d-flex w-90 mx-auto align-items-center justify-content-between">
+          <Link to="/" className="logo w-25">
+            Dhruv Mehta{" "}
+          </Link>
+          <ul className="menu-options d-flex justify-content-between list-unstyled">
+            {routes.map(({ name, path }) => (
+              <li key={path}>
+                <Link
+                  className={path == location.pathname ? "active" : ""}
+                  to={path}
+                >
+                  {name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          <button className="menu-button" onClick={() => setIsOpen(!isOpen)}>
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+
+      <div className={`sidebar ${isOpen ? "active" : ""}`}>
+        <ul className="list-unstyled">
+          {routes.map(({ name, path }) => (
+            <li key={path}>
+              <Link
+                className={path == location.pathname ? "active" : ""}
+                to={path}
+              >
+                {name}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
-    </nav>
+    </>
   );
-}
+};
 
-
-export default withRouter(Header)
+export default withRouter(Header);

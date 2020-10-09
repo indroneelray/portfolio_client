@@ -109,20 +109,20 @@ export const Tabs = {
 };
 
 export const photographs = [
-  Photo1,
-  Photo2,
-  Photo3,
-  Photo4,
-  Photo5,
-  Photo6,
-  Photo7,
-  Photo8,
-  Photo9,
-  Photo10,
-  Photo11,
-  Photo12,
-  Photo13,
-  Photo14,
+  Photo8, //1
+  Photo2, //2
+  Photo7, //3
+  Photo13, //4
+  Photo4, //5
+  Photo11, //6
+  Photo9, //7
+  Photo1, //8
+  Photo12, //9
+  Photo5, //10
+  Photo6, //11
+  Photo3, //12
+  Photo10, //13
+  Photo14, //14
 ];
 
 export const internshipAssets = {

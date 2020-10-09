@@ -549,13 +549,14 @@ nav {
   .sidebar {
     left: -384px;
     transition: left 0.4s ease-out;
-    width: 50%;
+    width: 75%;
     position: fixed;
     min-height: 100vh;
     z-index: 1000;
     background: white;
     border:1px solid white;
     top: 0;
+    display:block;
   }
 
   .sidebar.active {

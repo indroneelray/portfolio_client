@@ -3,6 +3,7 @@ import { internshipAssets } from "../constants";
 import Fade from "react-reveal/Fade";
 import internships from "../assets/internships/internships.png";
 import internshipsMobile from "../assets/internships/internshipsMobile.jpeg";
+import universeMobile from "../assets/internships/universeMobile.png"
 
 export default function Internships() {
   return (
@@ -29,7 +30,7 @@ export default function Internships() {
 
           <div className="row  universe-row mobile">
             <div className="col-5">
-              <img className="universe-image w-100" src={internshipAssets.universe} />
+              <img className="universe-image w-100" src={universeMobile} />
             </div>
             <div className="col-7">
               <div className="w-100">

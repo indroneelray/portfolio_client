@@ -524,6 +524,12 @@ nav {
   }
 }
 
+@media(max-width:990px){
+    .homepage .intro-row .col-12{
+      text-align: center;
+    }
+}
+
 @media (max-width: 768px) {
   .awards.w-80 {
     width: 100% !important;
@@ -579,6 +585,8 @@ nav {
     }
   }
 }
+
+
 
 @media (max-width: 767px) {
   nav .menu-options {
@@ -664,7 +672,7 @@ nav {
   }
 
   .homepage .intro-row img {
-    width: 100%;
+    width: 80%;
   }
 
   .internships .universe-row {

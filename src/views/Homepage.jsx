@@ -19,17 +19,17 @@ export default function Homepage() {
       </Fade>
 
       <div className="floating-icons">
-        <span className="position-relative email">
+        <span className="email">
           <i className="fa fa-envelope"></i> {" "}
           {/* <strong> Dhruvmc23@gmail.com </strong> */}
         </span>
         <br />
-        <span className="position-relative instagram">
+        <span className="instagram">
           <i className="fa fa-instagram"></i> 
           {/* <strong> Dhruvm_23</strong> */}
         </span>
         <br />
-        <span className="position-relative phone">
+        <span className="phone">
           <i className="fa fa-phone"></i> {" "}
           {/* <strong>+91 9711450509</strong>{" "} */}
         </span>

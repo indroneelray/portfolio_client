@@ -10,11 +10,20 @@ import {
   zoroText,
   innovationItems,
 } from "../constants";
+import Slider from "react-slick";
+
+var settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+};
 
 const Innovations = () => {
   const [activeTab, setTab] = useState(Tabs.MissMistake);
   const [data, setData] = useState({ info: mmText, images: mmImages });
-  const [reRender, setRerender] = useState(false)
+  const [reRender, setRerender] = useState(false);
 
   useEffect(() => {
     console.log(activeTab);
@@ -26,19 +35,19 @@ const Innovations = () => {
       case Tabs.MissMistake:
         setData({ info: mmText, images: mmImages });
         setTab(id);
-        setRerender(true)
+        setRerender(true);
         break;
 
       case Tabs.ZoroLoo:
         setData({ info: zoroText, images: zoroImages });
         setTab(id);
-        setRerender(true)
+        setRerender(true);
         break;
 
       case Tabs.Theos:
         setData({ info: theosText, images: theosImages });
         setTab(id);
-        setRerender(true)
+        setRerender(true);
         break;
       default:
         setData({ info: mmText, images: mmImages });
@@ -46,12 +55,11 @@ const Innovations = () => {
     }
   };
 
-
-  useEffect(()=>{
-    if(reRender == true){
-      setRerender(false)
+  useEffect(() => {
+    if (reRender == true) {
+      setRerender(false);
     }
-  }, [reRender])
+  }, [reRender]);
 
   return (
     <div className="innovations container-fluid w-100 px-5 position-relative">
@@ -59,14 +67,22 @@ const Innovations = () => {
         <div className="w-100 container tab-details-container">
           {!reRender && (
             <Fade>
-              <div className="d-flex align-items-center justify-content-center">
+              <div className="d-flex align-items-center justify-content-center desktop">
                 {data.images.map((image) => (
                   <div key={image} className="image-container">
                     <img src={image} />
                   </div>
                 ))}
               </div>
-              <h2>{data.info.title}</h2>
+
+              <div className="slider-images mobile">
+                <Slider {...settings}>
+                  {data.images.map((image) => (
+                      <img  key={image}  src={image} className="" />
+                  ))}
+                </Slider>
+              </div>
+              <h2 className="mt-5">{data.info.title}</h2>
               <p>{data.info.description}</p>
               <p>{data.info.patent}</p>
             </Fade>

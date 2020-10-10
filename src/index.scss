@@ -169,7 +169,7 @@ nav {
     span.email:hover::after {
       color: white;
       content: "Dhruvmc23@gmail.com";
-      position: fixed;
+      position: absolute;
       margin-top: -2px;
       margin-left: 10px;
       background: #542de9;
@@ -187,7 +187,7 @@ nav {
     span.instagram:hover::after {
       color: white;
       content: "@Dhruvm_23";
-      position: fixed;
+      position: absolute;
       width: 150px;
       margin-top: 0px;
       margin-left: 10px;
@@ -204,7 +204,7 @@ nav {
     span.phone:hover::after {
       color: white;
       content: "+91 9711450509";
-      position: fixed;
+      position: absolute;
       width: 180px;
       margin-top: -2px;
       margin-left: 10px;
@@ -282,6 +282,10 @@ nav {
 
 .innovations {
   min-height: calc(100vh - #{$nav-height});
+
+  .mobile {
+    display: none;
+  }
 
   .w-80 {
     z-index: 1;
@@ -382,6 +386,10 @@ nav {
 }
 
 .internships {
+  .universe-row.mobile {
+    display: none;
+  }
+
   .universe-row {
     margin: 35px 0px;
     font-family: Rubik;
@@ -402,6 +410,10 @@ nav {
       font-size: 14px;
       margin-bottom: 5px;
     }
+  }
+
+  .internship-images-container.mobile {
+    display: none;
   }
   .internship-images-container {
     display: flex;
@@ -425,6 +437,7 @@ nav {
       justify-content: space-around;
       height: 100%;
       padding: 5px;
+      font-family: Rubik;
 
       p {
         margin-bottom: 0px;
@@ -505,9 +518,9 @@ nav {
   }
 }
 
-@media(max-width:1024px){
-  .innovations .tabs-bg{
-    bottom:-10%
+@media (max-width: 1024px) {
+  .innovations .tabs-bg {
+    bottom: -10%;
   }
 }
 
@@ -616,8 +629,8 @@ nav {
     height: 100vh;
     background: white;
     width: 75%;
-    margin-left:auto;
-    margin-right:0
+    margin-left: auto;
+    margin-right: 0;
   }
 
   .sidebar ul a {
@@ -625,27 +638,27 @@ nav {
   }
 
   .innovations .tabs-bg {
-    bottom: -30%;
+    bottom: -50%;
   }
-
 
   .innovations .tabs-bg .tabs-container {
     flex-direction: column;
     align-items: center;
+    top: unset;
+    bottom: 0;
 
     .innovation-tab {
       margin: 10px 0px;
     }
   }
 
-  
-  .innovations .w-80 .tab-details-container h2{
-    font-size:18px
+  .innovations .w-80 .tab-details-container h2 {
+    font-size: 18px;
   }
-  .innovations .w-80 .tab-details-container p{
-    font-size:14px
+  .innovations .w-80 .tab-details-container p {
+    font-size: 14px;
   }
-  
+
   .homepage h1 {
     font-size: 80px;
   }
@@ -677,5 +690,28 @@ nav {
     top: unset;
     bottom: 5vh;
     overflow-wrap: break-word;
+  }
+
+  .internships .internship-images-container.mobile {
+    display: block;
+  }
+  .internships .internship-images-container.desktop {
+    display: none;
+  }
+
+  .universe-row.mobile {
+    display: flex !important;
+  }
+
+  .universe-row.desktop {
+    display: none;
+  }
+
+  .innovations .mobile {
+    display: unset;
+  }
+
+  .innovations .desktop {
+    display: none !important;
   }
 }
